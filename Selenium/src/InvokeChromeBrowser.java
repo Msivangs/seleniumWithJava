@@ -8,9 +8,10 @@ public class InvokeChromeBrowser {
 
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.youtube.com/");
+		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
 		driver.quit();
 
 	}
